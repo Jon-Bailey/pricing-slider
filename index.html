@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <h3>Sign-up for our 30-day trial.<br/>No credit card required.</h3>
+  </header>
+
+  <main>
+    <h2>100K PAGEVIEWS</h2>
+    <section id="pricing">
+      <div id="slider-container">
+      <input type="range" min="0" max="100" value="50" id="slider-bar">
+    </div>
+      <h2><span id="price"></span>/month</h2>
+    </section>
+
+  <section id="billing-section">
+    <h3>Monthly Billing</h3>
+    <label class="switch">
+      <input type="checkbox">
+      <span class="toggle round"></span>
+    </label>
+    <h3>Yearly Billing</h3>
+    <span class="discount">-25%</span>
+  </section>
+
+  <section id="check-section">
+    <h3><span class="check"><img src=images/icon-check.svg></span>Unlimited websites</h3>
+    <h3><span class="check"><img src=images/icon-check.svg></span>100% data ownership</h3>
+    <h3><span class="check"><img src=images/icon-check.svg></span>Email reports</h3>
+  </section>
+
+    <div id="cta-button"><a href="#">Start my trial</a></div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jon Bailey</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
