@@ -68,7 +68,7 @@ main {
 .top-div {
   display:flex;
   justify-content:center;
-  padding:0px 50px 0px 50px;
+  padding:0px 50px 20px 50px;
   align-items:center;
 }
 
@@ -255,6 +255,9 @@ section {
   padding: 15px 0px;
   font-size: 13px;
   cursor: pointer;
+  color: hsl(226, 100%, 87%);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 #cta-button:hover {
@@ -266,8 +269,8 @@ section {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 45px;
+  height: 23px;
 }
 
 .switch input {
@@ -291,8 +294,8 @@ section {
 .toggle:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 15px;
+  width: 15px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -301,22 +304,22 @@ section {
 }
 
 input:checked + .toggle {
-  background-color: hsl(223, 50%, 87%);
+  background-color: hsl(174, 77%, 80%);
 }
 
 input:focus + .toggle {
-  box-shadow: 0 0 1px hsl(223, 50%, 87%);
+  box-shadow: 0 0 1px hsl(174, 77%, 80%);
 }
 
 input:checked + .toggle:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(23px);
+  -ms-transform: translateX(23px);
+  transform: translateX(23px);
 }
 
 /* Rounded toggles */
 .toggle.round {
-  border-radius: 34px;
+  border-radius: 25px;
 }
 
 .toggle.round:before {
