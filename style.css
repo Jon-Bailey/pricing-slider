@@ -82,6 +82,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius:50px;
 }
 
 input[type="range"] {
@@ -132,6 +133,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 input[type="range"]:focus::-webkit-slider-runnable-track {
   background: hsl(224, 65%, 95%);
+  border-radius: 50px;
 }
 
 input[type="range"]::-moz-range-track {

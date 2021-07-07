@@ -15,9 +15,15 @@ loadPrice = () => {
 slider.oninput = function() {
     price.textContent = '$' + Math.floor(this.value * .33) + ".00";
     mobilePrice.textContent = '$' + Math.floor(this.value * .33) + ".00";
-    let thumbPosition = this.value;
+    let thumbPosition = slider.value;
+    slider.style.background = `linear-gradient(90deg, hsl(174, 77%, 80%) ${thumbPosition}% , hsl(224, 65%, 95%)${thumbPosition}%)`;
+}
+
+slider.onkeydown = function() {
+    let thumbPosition = slider.value;
     slider.style.background = `linear-gradient(90deg, hsl(174, 77%, 80%) ${thumbPosition}% , hsl(224, 65%, 95%)${thumbPosition}%)`;
 }
 
 loadPrice();
 slider.oninput();
+slider.onkeydown();
